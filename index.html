@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Rock<br>Paper<br>Scissors</h1>
+            <div class="scoreboard">
+                <div class="score">
+                    <span>Computer Score</span>
+                    <div id="computer-score">0</div>
+                </div>
+                <div class="score">
+                    <span>Your<br>Score</span>
+                    <div id="your-score">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="two-btn">
+                <div class="choice" id="rock" onclick="playRound('rock')">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="choice" id="scissors" onclick="playRound('scissors')">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+
+            <div class="choice" id="paper" onclick="playRound('paper')">
+                <img src="paper.png" alt="Paper">
+            </div>
+        </div>
+
+        <button id="rules-btn" onclick="showRules()">Rules</button>
+
+        <div id="popup" class="hidden">
+            <div id="popup-content">
+                <h2>Game Rules</h2>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                    <li>If both players lay down the same hand, each player lays down another hand.</li>
+                </ul>
+                <button id="close-popup" onclick="closeRules()">X</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations Screen</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="congratulations-container">
+        <div class="celebration">
+            <img src="Vector.png" alt="Trophy" class="trophy">
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+        <h1>HURRAY!!</h1>
+        <h2>YOU WON THE GAME</h2>
+        <button class="play-again-btn" onclick="window.location.href = 'index.html';">Play Again</button>
+
+        <button class="rules-btn">Rules</button>
+        
+        <div id="popup" class="hidden">
+            <div id="popup-content">
+                <h2>Game Rules</h2>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                    <li>If both players lay down the same hand, each player lays down another hand.</li>
+                </ul>
+                <button id="close-popup">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
