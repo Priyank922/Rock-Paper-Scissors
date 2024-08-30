@@ -19,7 +19,10 @@ function playRound(playerSelection) {
     } else if (result === 'lose') {
         computerScore++;
     }
-    else{
+      else if (playerScore < computerScore) {
+        window.location.href = 'youlose.html'; 
+    } 
+     else{
         window.location.href = 'tie.html'; 
 
     }
